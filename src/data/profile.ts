@@ -15,83 +15,30 @@ export type Profile = {
   skills: string[];
   links: LinkItem[];
 };
-
 export const profile: Profile = {
-  name: "Goran Csonkity",
-  role: "QA Engineer / SDET",
+  name: "Nuran Nalci",
+  role: "Data Analyst",
   summary:
-    "QA-focused engineer building and testing web apps with TypeScript, React, Fastify, and Playwright. I value clean architecture, TDD, and practical automation that adds confidence. I enjoy helping new interns get started and sharing what I’ve learned along the way.",
-
-  location: "Berlin, Germany",
-  email: "csonkityg@gmail.com",
-  lookingFor: "QA / SDET roles in Europe (remote or hybrid)",
+    "Data Analyst with hands-on experience in SQL, Python, and analytics workflows. Experienced in building aggregated metrics, supporting data pipelines, and documenting analytical logic. Passionate about turning data into clear, actionable insights and continuously learning in real-world data environments.",
+  location: "Germany (Remote)",
+  email: "nurannalci26@gmail.com",
+  lookingFor: "Junior / Entry-Level Data Analyst roles",
   avatar: "/images/avatar.svg",
-  resumeUrl: "https://www.linkedin.com/in/goran-csonkity",
+  resumeUrl: "https://www.linkedin.com/in/nurannalci/",
   skills: [
-    // Core Languages & Runtime
-    "TypeScript",
-    "JavaScript (ES6+)",
-    "Python",
-    "Node.js",
-
-    // Frontend
-    "React",
-    "Next.js",
-    "Zustand",
-    "Tailwind CSS",
-    "HTML5 / CSS3",
-
-    // Backend & APIs
-    "Fastify",
-    "REST APIs",
-    "JWT Authentication",
-    "Zod Validation",
-
-    // Databases & Data
-    "PostgreSQL",
     "SQL",
-    "Dockerized Postgres",
-    "Migrations",
-
-    // Messaging / Streaming
-    "Kafka",
-    "Event-driven Architecture",
-
-    // Testing & QA
-    "Playwright",
-    "Vitest",
-    "Jest",
-    "Pytest",
-    "Selenium (legacy)",
-    "TDD / BDD",
-    "Integration Testing",
-    "E2E Testing",
-    "CI/CD Pipelines",
-
-    // DevOps & Tools
-    "Docker",
-    "Git / GitHub",
-    "GitHub Actions",
-    "VS Code",
-    "Linux",
-    "Shell / CLI Tools",
-
-    // Patterns & Practices
-    "Clean Architecture",
-    "Page Object Model (POM)",
-    "Microservices",
-    "Schema Submodules",
-    "Test Strategy Design",
-
-    // Collaboration
-    "Onboarding Support for New Interns",
-    "Knowledge Sharing",
-    "Team Communication",
-    "Cross-functional Collaboration"
+    "Python",
+    "Data Analysis",
+    "Airflow",
+    "Data Pipelines",
+    "Metrics & KPIs",
+    "Business Intelligence",
+    "Data Documentation",
+    "Analytics Reporting"
   ],
   links: [
-    { label: "GitHub", href: "https://github.com/MaliLala" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/goran-csonkity" },
-    { label: "Email", href: "mailto:csonkityg@gmail.com" },
+    { label: "GitHub", href: "https://github.com/NuranNalcii" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/nurannalci/" },
+    { label: "Email", href: "mailto:nurannalci26@gmail.com" }
   ],
 };
