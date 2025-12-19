@@ -1,5 +1,12 @@
 import { type CvArticle } from '../data/cv';
 
+import { cvArticles } from '@/data/cv';
+
+if (!cvArticles.length) {
+  return null;
+}
+
+
 export function CvCard({ item }: { item: CvArticle }) {
   return (
     <article className="card p-5 md:p-6 relative">
