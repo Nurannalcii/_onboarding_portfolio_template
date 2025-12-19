@@ -1,15 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ProfileCard } from '../components/ProfileCard';
 import { ProjectCard } from '../components/ProjectCard';
 import { CvCard } from '../components/CvCard';
+
 import { profile } from '../data/profile';
 import { projects } from '../data/projects';
 import { cvArticles } from '../data/cv';
 
 export default function HomePage() {
+  const hasExperience = cvArticles && cvArticles.length > 0;
+
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
@@ -87,14 +91,14 @@ export default function HomePage() {
           </div>
 
           <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {projects.slice(0, 4).map((p) => (
-              <ProjectCard key={p.title} project={p} />
+            {projects.slice(0, 4).map((project) => (
+              <ProjectCard key={project.title} project={project} />
             ))}
           </div>
         </section>
 
-        {/* EXPERIENCE – SADECE DATA VARSA */}
-        {cvArticles.length > 0 && (
+        {/* EXPERIENCE – SADECE GERÇEKTEN VARSA */}
+        {hasExperience && (
           <section id="cv" className="container-grid pt-10 sm:pt-14 pb-16">
             <div className="flex items-end justify-between gap-4">
               <h2 className="section-title">Experience</h2>
