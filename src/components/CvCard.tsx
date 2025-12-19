@@ -1,5 +1,12 @@
 import { type CvArticle } from '../data/cv';
 import { cvArticles } from '@/data/cv';
+import { cvArticles } from '@/data/cv';
+
+if (!cvArticles.length) {
+  export default function CvCard() {
+    return null;
+  }
+}
 
 export function CvCard({ item }: { item: CvArticle }) {
   // 🔴 cvArticles BOŞSA → BU COMPONENT HİÇ RENDER EDİLMEZ
